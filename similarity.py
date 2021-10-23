@@ -131,6 +131,8 @@ if __name__ == '__main__':
         q = temp_dic.pop(k)
         similarity_list = getSimilarity(temp_dic, q, len_dic)
         # print(similarity_list)
+    pool.close()
+    pool.join()
     end_2 = time.process_time()
     end_1 = time.time()
     print(end_1 - start_1)
